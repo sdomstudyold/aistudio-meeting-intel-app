@@ -1,0 +1,6 @@
+{
+  "name": "PostScript Intelligence",
+  "description": "A post-meeting synthesis tool that ingests planned content and actual outcomes to produce structured intelligence briefs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

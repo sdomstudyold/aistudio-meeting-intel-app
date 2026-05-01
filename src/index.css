@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-surface: #fdf8f8;
+  --color-surface-dim: #ddd9d8;
+  --color-surface-bright: #fdf8f8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f7f3f2;
+  --color-surface-container: #f1edec;
+  --color-surface-container-high: #ebe7e6;
+  --color-surface-container-highest: #e5e2e1;
+  --color-on-surface: #1c1b1b;
+  --color-on-surface-variant: #444748;
+  --color-inverse-surface: #313030;
+  --color-inverse-on-surface: #f4f0ef;
+  --color-outline: #747878;
+  --color-outline-variant: #c4c7c7;
+  --color-surface-tint: #5f5e5e;
+  
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1c1b1b;
+  --color-on-primary-container: #858383;
+  --color-inverse-primary: #c8c6c5;
+  
+  --color-secondary: #006c4a;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #82f5c1;
+  --color-on-secondary-container: #00714e;
+  
+  --color-tertiary: #000000;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #1c1b1a;
+  --color-on-tertiary-container: #868382;
+  
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  
+  --color-primary-fixed: #e5e2e1;
+  --color-primary-fixed-dim: #c8c6c5;
+  --color-on-primary-fixed: #1c1b1b;
+  --color-on-primary-fixed-variant: #474746;
+  
+  --color-secondary-fixed: #85f8c4;
+  --color-secondary-fixed-dim: #68dba9;
+  --color-on-secondary-fixed: #002114;
+  --color-on-secondary-fixed-variant: #005137;
+  
+  --color-tertiary-fixed: #e6e2df;
+  --color-tertiary-fixed-dim: #cac6c4;
+  --color-on-tertiary-fixed: #1c1b1a;
+  --color-on-tertiary-fixed-variant: #484645;
+  
+  --color-background: #fdf8f8;
+  --color-on-background: #1c1b1b;
+  --color-surface-variant: #e5e2e1;
+  
+  --color-charcoal-primary: #1A1A1A;
+  --color-emerald-decision: #059669;
+  --color-off-white-bg: #F9F9F8;
+  --color-paper-surface: #FFFFFF;
+  --color-border-subtle: #E5E7EB;
+  --color-risk-amber: #D97706;
+  --color-risk-red: #DC2626;
+
+  --font-h1: "Inter", sans-serif;
+  --font-h2: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased;
+  }
+}
+
+@layer components {
+  .font-h1-display {
+    @apply text-[32px] font-bold leading-[1.2] tracking-[-0.02em];
+  }
+  .font-h2-module {
+    @apply text-[20px] font-semibold leading-[1.4] tracking-[-0.01em];
+  }
+  .font-body-main {
+    @apply text-[16px] font-normal leading-[1.6];
+  }
+  .font-body-meta {
+    @apply text-[14px] font-normal leading-[1.5];
+  }
+  .font-label-caps {
+    @apply text-[12px] font-semibold leading-[1] tracking-[0.05em] uppercase;
+  }
+}
